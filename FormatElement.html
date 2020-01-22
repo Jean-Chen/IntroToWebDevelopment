@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>	
+		<title>HTML</title>
+	</head>
+	<body>
+		<header>
+			<!--The header element typically includes a link to the website's home page, the page's title, and links to other pages in the website, and it usually appears across the top of the browser window.-->
+            <h1 id="header">HTML Intro</h1>
+		</header>
+
+		<hr/>
+
+		<!-- nav: a block that includes navigation elements, such as buttons or menus. -->
+		<nav></nav>
+
+		<section id="main-content">
+			<article>
+				Block elements default to having a new line before and after the element. By contrast, inline elements do not start with a new line. In standard practice, an inline element must be nested in a block element, as it cannot stand alone on a page.
+			</article>
+			<article>
+				The <span style="background-color:yellow">span</span> element is an inline equivalent of a div element. It is most commonly used to apply CSS styling to all of the text it contains, without applying those styles to the other text in the block. 
+			</article>
+			<article id="formatting-elements">
+				<p><h2>Formatting Elements of HTML</h2></p>
+				<p><b>This is bold text.</b></p>
+				<p><strong>This is strong text.</stong></p>
+				<p><i>This is italicized text.</i></p>
+				<p><em>This is emphasized text.</em></p>
+
+				<p>Superscript: <sup>Text goes here</sup></p>
+				<p>Subscript: <sub>Text goes here</sub></p>
+				<p>Inserted: <ins>Text goes here</ins></p>
+				<p>Deleted: <del>Text goes here</del></p>
+				<p>Mark: <mark>Text goes here</mark></p>
+			</article>
+			<article>
+				Here is an example of some blockquoted text:
+				<blockquote>
+				    Lorem ipsum dolor sit amet, magna sed quia, elit non 
+				    ut corrupti, aenean commodo elit, tincidunt platea 
+				    purus quis at dolor a, felis nunc massa pede cras 
+				    quis. Lacinia fusce, praesent at pede phasellus, dui 
+				    etiam in luctus.
+				</blockquote>
+
+				<p>Code: <code>Text goes here</code></p>
+				<!-- This is a comment and will not display -->
+			</article>
+			<article>
+				<figure>
+  					<img src="https://makeawebsitehub.com/wp-content/uploads/2016/02/learn-code-e1455713167295.jpg" alt="coding" style="width:30%">
+  					<figcaption>Fig.1 - Coding.</figcaption>
+				</figure>
+			</article>
+			<article id="links">
+				<!-- href="", which tells the browser to reload the current page. -->
+				The screen reader will read only the hypertext, not the text that surrounds it. It is a good idea to use meaningful text in any hyperlink.
+				<ul>
+					<li>To schedule service, <a href="https://www.google.com" target="_blank">click here</a> (X)</li>
+					<li><a href="https://www.google.com">Schedule an appointment</a> (O)</li>
+					<li>Targeting content:</li>
+					<ul>
+						<li>External: <a href="https://www.google.com" target="_blank">Google</a></li>
+						<li>Internal: <a href="html/HelloWorld/index.html">Hello World</a></li>
+						<li>Index: <a href="#header">Header</a></li>
+					</ul>
+				</ul>
+			</article>
+
+			<article>
+	            <table border="1" width="35%">
+	                <caption>Contact Information</caption>
+	                <tr>
+	                    <th colspan="2">Name</th>
+	                    <th>Phone</th>
+	                </tr>
+	                <tr>
+	                    <td>Jean</td>
+	                    <td>Chen</td>
+	                    <td>555-1212</td>
+	                </tr>
+	             </table>
+	        </article>
+		</section>
+
+		<hr/>
+
+		<footer>
+			<details>
+				<summary>&copy; 2020 Jean, All rights reserved.</summary>
+				<p>The footer element normally appears at the bottom of the body element, often with links to other pages in the website and legal information about using the page.</p>
+        	</details>
+		</footer>
+	</body>
+</html>
