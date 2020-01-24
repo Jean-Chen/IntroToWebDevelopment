@@ -1,0 +1,99 @@
+<!DOCType html>
+<html lang="en">
+	<head>
+    	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body>
+		<div class="container">
+    		<h1>Sample</h1>
+    		<form name="displayEvens" onsubmit="return validateItems();" class="form-inline">
+				<div class="form-group">
+					<label for="startNum">Starting Number</label>
+					<input type="number" class="form-control" id="startNum">
+				</div>
+				<div class="form-group">
+					<label for="endNum">Ending Number</label>
+					<input type="number" class="form-control" id="endNum">
+				</div>  
+				<div class="form-group">
+					<label for="stepNum">Step</label>
+					<input type="number" class="form-control" id="stepNum">
+				</div>          
+				<button type="submit" id="submitButton" class="btn btn-default">Submit</button>
+			</form>
+			
+			<div>
+				<h3><span id="resultMsg"></span></h3>
+			</div>
+		</div>
+		
+		
+		<script type="text/Javascript">
+			function clearErrors() {    
+				for (var loopCounter = 0; 
+					loopCounter < document.forms["displayEvens"].elements.length; loopCounter++) {
+		
+					if (document.forms["displayEvens"].elements[loopCounter].parentElement.className.indexOf("has-") != -1) {
+						document.forms["displayEvens"].elements[loopCounter].parentElement.className = "form-group";
+					}
+				}    
+			}
+
+			function validateItems() {
+				clearErrors();
+				var startNum = parseInt(document.forms["displayEvens"]["startNum"].value);
+    			var endNum = parseInt(document.forms["displayEvens"]["endNum"].value);
+    			var stepNum = parseInt(document.forms["displayEvens"]["stepNum"].value);
+    
+				if (startNum == "" || isNaN(startNum)) {
+					alert("Starting Number must be filled in with a number.");
+					document.forms["displayEvens"]["startNum"].parentElement.className = "form-group has-error";
+					document.forms["displayEvens"]["startNum"].focus();
+					return false;
+				}
+				if (endNum == "" || isNaN(endNum)) {
+					alert("End Number must be filled in with a number.");
+					document.forms["displayEvens"]["endNum"].parentElement.className = "form-group has-error";
+					document.forms["displayEvens"]["endNum"].focus();
+					return false;
+				}
+				if (endNum <= startNum) {
+					alert("The Ending Number must be more than the Starting Number.");
+					document.forms["displayEvens"]["startNum"].parentElement.className = "form-group has-error";
+					document.forms["displayEvens"]["endNum"].parentElement.className = "form-group has-error";
+					document.forms["displayEvens"]["endNum"].focus();
+					return false;
+				}
+				if (stepNum == "" || isNaN(stepNum) || stepNum <=0 ) {
+					alert("Step must be filled in with a positive number.");
+					document.forms["displayEvens"]["stepNum"].parentElement.className = "form-group has-error";
+					document.forms["displayEvens"]["stepNum"].focus();
+					return false;
+				}
+				
+				var returnValues = "Here are the even numbers between " + startNum + " and " + endNum + " by " + stepNum + "'s:\n";
+				for (var i=startNum; i<=endNum; i=i+stepNum) {
+					if (i>=startNum) {
+						if (i % 2 == 0) {
+							returnValues = returnValues + i + "\n";
+						}
+					
+					}
+					
+				}
+				
+				document.getElementById("resultMsg").innerText = returnValues;
+				return false;
+			}
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
