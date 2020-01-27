@@ -7,20 +7,22 @@
 <html>
 	<head>
 		<title>Home Page</title>
+		<link rel="stylesheet" type="text/css" href="css/restaurantStyles.css" />
 		<style>
-			a {
-				margin-left:  10px;
-				margin-right: 10px;
-			}
 			table {
 				width: 95%;
 				margin: auto;
+				text-align: center;
 			}
 			tr {
 				height: 35px;
 			}
 			td.leftcol {
 				text-align: right;
+				width: 40%;
+			}
+			td.fieldReq {
+				font-weight: bold;
 			}
 			td.rightcol {
 				text-align: left;
@@ -36,12 +38,12 @@
 		</style>
 	</head>
 
-	<body align="center">
+	<body>
 		<header>
 			<h1>Jean's Kitchen</h1>
 		</header>
 
-		<nav align="left">
+		<nav>
 			<hr />
 				<a href="index.html" alt="home page">Home</a>
 				<a href="menu.html" alt="menu">Menu</a>
@@ -52,12 +54,12 @@
 		<section>
 			<form>
 				<table>
-					<tr><td width="40%" class="leftcol">Name: </td><td class="rightcol"><input type="text" name="userName"></td></tr>
-					<tr><td class="leftcol">Email: </td><td class="rightcol"><input type="text" name="userEmail"></td></tr>
-					<tr><td class="leftcol">Phone: </td><td class="rightcol"><input type="text" name="userPhone"></td></tr>
+					<tr><td class="leftcol fieldReq">Name: </td><td class="rightcol"><input type="text" name="userName" required></td></tr>
+					<tr><td class="leftcol fieldReq">Email: </td><td class="rightcol"><input type="text" name="userEmail" required></td></tr>
+					<tr><td class="leftcol fieldReq">Phone: </td><td class="rightcol"><input type="text" name="userPhone" required></td></tr>
 					<tr>
-						<td class="leftcol">Reason for Inquiry: </td>
-						<td class="rightcol">
+						<td class="leftcol fieldReq">Reason for Inquiry: </td>
+						<td class="rightcol fieldReq">
 							<select name="reason">
 								<option value="catering">Catering</option>
 								<option value="party">Private Party</option>
@@ -66,7 +68,7 @@
 							</select>
 						</td>
 					</tr>
-					<tr><td class="leftcol" style="vertical-align: top;">Additional Information: </td><td class="rightcol"><textarea name="addtionInfo" rows="5" cols="40"></textarea></td></tr>
+					<tr><td class="leftcol">Additional Information: </td><td class="rightcol"><textarea name="addtionInfo" rows="5" cols="40"></textarea></td></tr>
 					<tr>
 						<td class="leftcol">Have you been to the restaurant? </td>
 						<td class="rightcol">

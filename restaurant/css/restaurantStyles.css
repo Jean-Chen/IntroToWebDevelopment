@@ -1,0 +1,26 @@
+header {
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-size: 1.2em;
+}
+header, footer {
+	text-align: center;
+}
+nav {
+	text-align: left;
+}
+nav a {
+	margin-left:  10px;
+	margin-right: 10px;
+}
+nav a:link {
+
+}
+nav a:visited {
+	color: green;
+}
+nav a:hover {
+	font-weight: bold;
+}
+nav a:active {
+	text-decoration: none;
+}

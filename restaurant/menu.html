@@ -7,30 +7,43 @@
 <html>
 	<head>
 		<title>Home Page</title>
+		<link rel="stylesheet" type="text/css" href="css/restaurantStyles.css" />
 		<style>
-			a {
-				margin-left:  10px;
-				margin-right: 10px;
+			section {
+				text-align: center;
+				background-color: #FFE633;
 			}
 			table {
 				width: 95%;
 				margin: auto;
+				margin-top: 10px;
+				margin-bottom: 30px;
+				text-align: top;
 			}
 			th {
 				width: 33.33%;
+				font-size: 1.1em;
 			}
 			th, td {
 				vertical-align: top;
-;			}
+			}
+			table.beverages {
+				width: 60%;
+				border: 1px dotted #a3c2c2;
+				text-align: left;
+				margin-bottom: 10px;
+			}
+			table.beverages tr:nth-child(even) {
+				background-color: #d1e0e0;
 		</style>
 	</head>
 
-	<body align="center">
+	<body>
 		<header>
 			<h1>Jean's Kitchen</h1>
 		</header>
 
-		<nav align="left">
+		<nav>
 			<hr />
 				<a href="index.html" alt="home page">Home</a>
 				<a href="" alt="menu">Menu</a>
@@ -39,7 +52,7 @@
 		</nav>
 
 		<section>
-			<table style="margin-top: 30px; margin-bottom: 30px;">
+			<table>
 				<tr>
 					<th>Burger and Fries</th><th>Hot Dog and Chips</th><th>Italian Sausage and Peppers</th>
 				</tr>
@@ -57,7 +70,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td colspan="3" height="10px"></td>
+					<td colspan="3"></td>
 				</tr>
 				<tr>
 					<th>Tenderloin Sandwich and Chips</th><th>House Salad</th><th>Brisket Sandwich and Fries</th>
@@ -67,7 +80,7 @@
 						Really Hits the Spot!<br>Plain or Sesame Seed Bun<br>Pickle, onion, tomato, and lettuce<br>
 						Served with our house-made chips<br>$8.95
 					</td>
-					<td style="tex-align: top;">
+					<td>
 						On the Lighter Side<br>Your choice - with or without cheese<br>Iceberg lettuce, tomatoes, peppers<br>
 						Thousand Island or Ranch<br>Dressing Served with a dinner roll<br>$6.95
 					</td>
@@ -76,6 +89,14 @@
 						french fries<br>$7.95
 					</td>
 				</tr>
+			</table>
+			
+			<table class="beverages">
+				<tr><th colspan="2">Beverages</th></tr>
+				<tr><td>Root Beer</td><td>$3.00</td></tr>
+				<tr><td>Bottled Water</td><td>$1.25</td></tr>
+				<tr><td>Lemonade</td><td>$1.00</td></tr>
+				<tr><td>Iced Tea</td><td>$1.25</td></tr>
 			</table>
 		</section>
 		
