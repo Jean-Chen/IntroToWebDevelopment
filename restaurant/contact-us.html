@@ -1,0 +1,119 @@
+<!DOCTYPE html> 
+<!--
+    Name: Jean Chen
+    Date Created: 2020/01/21 
+    Most recent revision: v1
+-->
+<html>
+	<head>
+		<title>Home Page</title>
+		<style>
+			a {
+				margin-left:  10px;
+				margin-right: 10px;
+			}
+			table {
+				width: 95%;
+				margin: auto;
+			}
+			tr {
+				height: 35px;
+			}
+			td.leftcol {
+				text-align: right;
+			}
+			td.rightcol {
+				text-align: left;
+			}
+			input[type="text"], select {
+				width: 250px;
+				height: 25px;
+			}
+			button {
+				width: 150px;
+				height: 30px;
+			}
+		</style>
+	</head>
+
+	<body align="center">
+		<header>
+			<h1>Jean's Kitchen</h1>
+		</header>
+
+		<nav align="left">
+			<hr />
+				<a href="index.html" alt="home page">Home</a>
+				<a href="menu.html" alt="menu">Menu</a>
+				<a href="" alt="contact us">Contact Us</a>
+			<hr />
+		</nav>
+
+		<section>
+			<form>
+				<table>
+					<tr><td width="40%" class="leftcol">Name: </td><td class="rightcol"><input type="text" name="userName"></td></tr>
+					<tr><td class="leftcol">Email: </td><td class="rightcol"><input type="text" name="userEmail"></td></tr>
+					<tr><td class="leftcol">Phone: </td><td class="rightcol"><input type="text" name="userPhone"></td></tr>
+					<tr>
+						<td class="leftcol">Reason for Inquiry: </td>
+						<td class="rightcol">
+							<select name="reason">
+								<option value="catering">Catering</option>
+								<option value="party">Private Party</option>
+								<option value="feedback">Feedback</option>
+								<option value="other">Other</option>
+							</select>
+						</td>
+					</tr>
+					<tr><td class="leftcol" style="vertical-align: top;">Additional Information: </td><td class="rightcol"><textarea name="addtionInfo" rows="5" cols="40"></textarea></td></tr>
+					<tr>
+						<td class="leftcol">Have you been to the restaurant? </td>
+						<td class="rightcol">
+							<input type="radio" name="beenHere" value="No" checked/>No
+							<input type="radio" name="beenHere" value="Yes"/>Yes
+						</td>
+					</tr>
+					<tr>
+						<td class="leftcol">Best days to contact you: </td>
+						<td class="rightcol">
+							<input type="checkbox" name="bestDays" value="M"/>M
+							<input type="checkbox" name="bestDays" value="T"/>T
+							<input type="checkbox" name="bestDays" value="W"/>W
+							<input type="checkbox" name="bestDays" value="Th"/>Th
+							<input type="checkbox" name="bestDays" value="F"/>F
+						</td>
+					</tr>
+					<tr><td colspan="2"><button type="submit" name="submitReq">Send Request</button></td></tr>
+				</table>
+			</form>
+		</section>
+		
+		<hr />
+		<footer>
+			<p>888 Lake Sugar, Wayzata, MN 55321<br>612-222-0000</p>
+		</footer>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
