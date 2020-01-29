@@ -1,6 +1,6 @@
 header {
-  font-family: "Trebuchet MS", Verdana, sans-serif;
-  font-size: 1.2em;
+  	font-family: "Trebuchet MS", Verdana, sans-serif;
+  	font-size: 1.2em;
 }
 header, footer {
 	text-align: center;
@@ -24,20 +24,20 @@ a.nav-link:active {
 }
 
 .carousel-caption {
-  color: #fff;
-  top: 50%;
-  font-size: 20px;
+	color: #fff;
+  	top: 50%;
+  	font-size: 20px;
 }
 .carousel-inner {
-  height: 90px;
-  background-color: #81E1F5;
+  	height: 90px;
+  	background-color: #81E1F5;
 }
 .carousel-indicators {
 	bottom: -5%;
 }
 @media screen and (max-width: 450px) {
 	.carousel-caption{
-	  font-size: 15px;
+		font-size: 15px;
 	}
 	.carousel-inner{
   		height: 100px;
