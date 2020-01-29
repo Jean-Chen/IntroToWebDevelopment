@@ -4,14 +4,19 @@
     Date Created: 2020/01/21 
     Most recent revision: v1
 -->
-<html>
+<html lang="en">
 	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Home Page</title>
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/restaurantStyles.css" />
 		<style>
 			section {
 				text-align: center;
-				background-color: #FFE633;
+				background-color: #CFF0F7;
 			}
 			table {
 				width: 95%;
@@ -20,89 +25,108 @@
 				margin-bottom: 30px;
 				text-align: top;
 			}
-			th {
-				width: 33.33%;
+			div.menu-head {
 				font-size: 1.1em;
+				font-weight: bold;
 			}
 			th, td {
 				vertical-align: top;
 			}
 			table.beverages {
-				width: 60%;
-				border: 1px dotted #a3c2c2;
+				width: 70%;
 				text-align: left;
-				margin-bottom: 10px;
+				margin-top: 50px;
 			}
-			table.beverages tr:nth-child(even) {
-				background-color: #d1e0e0;
+			@media screen and (max-width: 450px) {
+				table.beverages {
+					width: 95%;
+				}
+			}
 		</style>
 	</head>
 
 	<body>
-		<header>
-			<h1>Jean's Kitchen</h1>
-		</header>
+		<div class="container">
+			<div class="jumbotron pt-5 pb-5 bg-info text-white">
+				<h1>HIT Kitchen</h1>
+				<h4 class="font-italic text-right text-warning">HIT Kitchen is opening a new location!</h4>
+			</div>
 
-		<nav>
-			<hr />
-				<a href="index.html" alt="home page">Home</a>
-				<a href="" alt="menu">Menu</a>
-				<a href="contact-us.html" alt="contact us">Contact Us</a>
-			<hr />
-		</nav>
-
-		<section>
-			<table>
-				<tr>
-					<th>Burger and Fries</th><th>Hot Dog and Chips</th><th>Italian Sausage and Peppers</th>
-				</tr>
-				<tr>
-					<td>
+			<ul class="nav nav-tabs mb-2">
+    			<li class="nav-item">
+      				<a class="nav-link" href="index.html" alt="home page"><i class="fas fa-home"></i></a>
+    			</li>
+				<li class="nav-item">
+      				<a class="nav-link active" href="" alt="menu">Menu</a>
+    			</li>
+    			<li class="nav-item">
+      				<a class="nav-link" href="contact-us.html" alt="contact us">Contact Us</a>
+    			</li>
+    		</ul>
+		
+			<section>
+				<div class="row">
+					<div class="col menu-head">Burger and Fries</div>
+					<div class="col menu-head">Hot Dog and Chips</div>
+					<div class="col menu-head">Italian Sausage and Peppers</div>
+				</div>
+				<div class="row">
+					<div class="col">
 						An American Classic!<br>Your choice - with or without cheese<br>Pickle, onion, tomato, and lettuce<br>
 						Served with our famous thick cut<br>french fries<br>$7.95
-					</td>
-					<td>
+					</div>
+					<div class="col">
 						A Summer Classic!<br>Your choice - white or wheat bun<br>Relish, mustard, and ketchup<br>Served with
 						our house-made chips<br>$7.95
-					</td>
-					<td>
+					</div>
+					<div class="col">
 						An All-Time Favorite!<br>Your choice - mild or spicy Cole Slaw<br>Served with garlic mashers<br>$10.95
-					</td>
-				</tr>
-				<tr>
-					<td colspan="3"></td>
-				</tr>
-				<tr>
-					<th>Tenderloin Sandwich and Chips</th><th>House Salad</th><th>Brisket Sandwich and Fries</th>
-				</tr>
-				<tr>
-					<td>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">&nbsp;</div>
+				</div>
+				<div class="row">
+					<div class="col menu-head">Tenderloin Sandwich and Chips</div>
+					<div class="col menu-head">House Salad</div>
+					<div class="col menu-head">Brisket Sandwich and Fries</div>
+				</div>
+				<div class="row">
+					<div class="col">
 						Really Hits the Spot!<br>Plain or Sesame Seed Bun<br>Pickle, onion, tomato, and lettuce<br>
 						Served with our house-made chips<br>$8.95
-					</td>
-					<td>
+					</div>
+					<div class="col">
 						On the Lighter Side<br>Your choice - with or without cheese<br>Iceberg lettuce, tomatoes, peppers<br>
 						Thousand Island or Ranch<br>Dressing Served with a dinner roll<br>$6.95
-					</td>
-					<td>
+					</div>
+					<div class="col">
 						A Taste of Texas!<br>Smoked Brisket on thick-cut<br>Texas Toast<br>Cole Slaw<br>Served with our famous thick-cut<br>
 						french fries<br>$7.95
-					</td>
-				</tr>
-			</table>
+					</div>
+				</div>
 			
-			<table class="beverages">
-				<tr><th colspan="2">Beverages</th></tr>
-				<tr><td>Root Beer</td><td>$3.00</td></tr>
-				<tr><td>Bottled Water</td><td>$1.25</td></tr>
-				<tr><td>Lemonade</td><td>$1.00</td></tr>
-				<tr><td>Iced Tea</td><td>$1.25</td></tr>
-			</table>
-		</section>
+				<table class="table table-striped beverages">
+					<thead>
+    					<tr><th colspan="2">Beverages</th></tr>
+    				</thead>
+    				<tbody>
+						<tr><td>Root Beer</td><td>$3.00</td></tr>
+						<tr><td>Bottled Water</td><td>$1.25</td></tr>
+						<tr><td>Lemonade</td><td>$1.00</td></tr>
+						<tr><td>Iced Tea</td><td>$1.25</td></tr>
+					</tbody>
+				</table>
+			</section>
 		
-		<hr />
-		<footer>
-			<p>888 Lake Sugar, Wayzata, MN 55321<br>612-222-0000</p>
-		</footer>
+			<hr />
+			<footer>
+				<p>888 Sugar Lake, Wayzata, MN 55321<br>612-222-0000</p>
+			</footer>
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	</body>
 </html>

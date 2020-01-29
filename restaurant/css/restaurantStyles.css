@@ -5,22 +5,41 @@ header {
 header, footer {
 	text-align: center;
 }
-nav {
-	text-align: left;
-}
-nav a {
-	margin-left:  10px;
-	margin-right: 10px;
-}
-nav a:link {
 
+a.nav-link {
+	text-decoration: underline;
 }
-nav a:visited {
+a.nav-link:visited {
 	color: green;
 }
-nav a:hover {
+a.nav-link:hover {
 	font-weight: bold;
 }
-nav a:active {
+a.nav-link:active {
 	text-decoration: none;
+}
+
+.jumbotron {
+	margin-bottom: 5px;
+}
+
+.carousel-caption {
+  color: #fff;
+  top: 50%;
+  font-size: 20px;
+}
+.carousel-inner {
+  height: 90px;
+  background-color: #81E1F5;
+}
+.carousel-indicators {
+	bottom: -5%;
+}
+@media screen and (max-width: 450px) {
+	.carousel-caption{
+	  font-size: 15px;
+	}
+	.carousel-inner{
+  		height: 100px;
+	}
 }

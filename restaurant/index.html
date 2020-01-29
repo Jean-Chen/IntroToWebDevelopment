@@ -4,39 +4,92 @@
     Date Created: 2020/01/21 
     Most recent revision: v1
 -->
-<html>
+<html lang="en">
 	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Home Page</title>
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/restaurantStyles.css" />
+		
 	</head>
 
 	<body>
-		<header>
-			<h1>Jean's Kitchen</h1>
-		</header>
+		<div class="container">		
+			<div class="jumbotron pt-5 pb-5 bg-info text-white">
+				<h1>HIT Kitchen</h1>
+				<h4 class="font-italic text-right text-warning">HIT Kitchen is opening a new location!</h4>
+			</div>
+			
+			<ul class="nav nav-tabs mb-2">
+    			<li class="nav-item">
+      				<a class="nav-link active" href="" alt="home page"><i class="fas fa-home"></i></a>
+    			</li>
+				<li class="nav-item">
+      				<a class="nav-link" href="menu.html" alt="menu">Menu</a>
+    			</li>
+    			<li class="nav-item">
+      				<a class="nav-link" href="contact-us.html" alt="contact us">Contact Us</a>
+    			</li>
+    		</ul>
+    		
+			<div id="carousels" class="carousel slide" data-ride="carousel">
+				<ul class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+			  	</ul>
+			  	<div class="carousel-inner">
+					<div class="carousel-item active">
+				  		<div class="carousel-caption">
+        					<p>We're opening a new location!</p>
+      					</div>
+					</div>
+					<div class="carousel-item">
+				  		<div class="carousel-caption">
+         					<p>We're rolling out our seasonal menu, with special options for this season.</p>
+      					</div>
+					</div>
+					<div class="carousel-item">
+				  		<div class="carousel-caption">
+         					<p>The Drink of the Month is SG Special Brew.</p>
+      					</div>
+					</div>
+			  	</div>
+			  	<a class="carousel-control-prev" href="#carousels" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+			  	</a>
+			  	<a class="carousel-control-next" href="#carousels" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+			  	</a>
+			</div>
 
-		<nav>
-			<hr />
-				<a href="" alt="home page">Home</a>
-				<a href="menu.html" alt="menu">Menu</a>
-				<a href="contact-us.html" alt="contact us">Contact Us</a>
-			<hr />
-		</nav>
-
-		<section align="center" style="background-color: #FFE633;">
-			<figure style="margin-top: 10px; margin-bottom: 0px;">
-				<img src="images/home-page.jpg" alt="picure of restaurant" />
-			</figure>
-			<article>
-				<p style="display: inline-block; width: 400px;"><span style="float:left">Restaurant Description</span><br>
-				<span style="display: inline-block; text-align: justify;">Sit at the bar at Jean's Kitchen in Wayzata, and, in addition to enjoying unbelievably fresh fish and standard-setting wagyu beef nibbles, you’ll inevitably make friends with your neighbors. It’s almost impossible to leave without having had the time of your life.</span>
-				</p>
-			</article>
-		</section>
+			<section style="background-color: #CFF0F7; text-align: center; margin-top: 5px;">
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-md-6 col-xm-12">
+						<img src="images/home-page.jpg" class="img-fluid rounded mx-auto d-block " alt="picure of the restaurant"/>
+					</div>
+				</div>
+				<div class="row justify-content-center" style="margin-top: 10px;">
+					<div class="col-lg-4 col-md-6 col-xm-12">
+						<p style="text-align: justify;"><span style="float:left">Restaurant Description</span><br>
+						Sit at the bar at HIT Kitchen in Wayzata, and, in addition to enjoying unbelievably fresh fish and standard-setting wagyu beef nibbles, you’ll inevitably make friends with your neighbors. It’s almost impossible to leave without having had the time of your life.
+						</p>
+					</div>
+				</div>
+			</section>
 		
-		<hr />
-		<footer>
-			<p>888 Lake Sugar, Wayzata, MN 55321<br>612-222-0000</p>
-		</footer>
+			<hr />
+			<footer>
+				<p>888 Sugar Lake, Wayzata, MN 55321<br>612-222-0000</p>
+			</footer>
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		
 	</body>
 </html>
